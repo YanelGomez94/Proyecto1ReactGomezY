@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <CartWidget />
       <ItemListContainer texto='Fotos 1' />
       
     </>

@@ -5,15 +5,16 @@ import React from 'react';
 
 const Navbar = () => {
     return(
-        <header className="bg-green-800 text-lg uppercase font-size: 1.5rem; ;">
+        <header className="bg-green-800 text-lg  font-size: 1.5rem; ;">
             <div className="container m-auto py-6 flex justify-between items-center">
-                <h1 className="">Photograph</h1>
+                <h1 className="">CineÉpico</h1>
                 {/* <img src={logo} alt="Logo" className="w-16 h-16" /> */}
-                <img src="https://www.escueladesarts.com/wp-content/uploads/fotografia-a-color.jpg" alt="logo" className="box-content h-15 w-15 p-4  absolute inset-y-0 left-0 w-16"></img>
+                <img src="https://www.ventanasur.com.ar/wp-content/uploads/2021/04/cine-argentino-2.jpg" alt="logo" className="box-content h-19 w-20 p-5 absolute inset-y-0 left-0"></img>
                   <nav className="">
-                    <a className="hover:text-white" href="#">Enlace 1</a> 
-                    <a className="hover:text-white" href="#">Enlace 2</a> 
-                    <a className="hover:text-white" href="#">Enlace 3</a>
+                    <a className="hover:text-white" href="#">Inicio</a>
+                    <a className="hover:text-white" href="#">Peliculas</a> 
+                    <a className="hover:text-white" href="#">Series</a> 
+                    <a className="hover:text-white" href="#">Categorías</a>
                       <CartWidget />    
                   </nav>
             </div>
