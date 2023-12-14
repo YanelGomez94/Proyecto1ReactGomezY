@@ -1,9 +1,7 @@
 import ItemCard from "../ItemCard/ItemCard";
 
 const ItemList = ({productos}) => {
-//     const onAdd = (quantity) => {
-//         console.log(`Compraste ${quantity} unidades`);
-// };
+
       
     return (
     <section className="container m-auto mt-8">
@@ -18,5 +16,5 @@ const ItemList = ({productos}) => {
     );
 };
 
-export default ItemList
+export default ItemList;
 

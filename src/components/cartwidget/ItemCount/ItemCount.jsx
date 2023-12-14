@@ -17,6 +17,8 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
     }
 
     return (
+
+        
         <div className="counter">
             <button disabled={count <= 1} onClick={decrease}>-</button>
             <span>{count}</span>
@@ -28,4 +30,7 @@ export const ItemCount = ({ initial, stock, onAdd }) => {
     )
 }
 
+    const onAdd = (quantity) => {
+        console.log(`Compraste ${quantity} unidades`);
+ };
 export default ItemCount;
