@@ -2,6 +2,7 @@
 import './Navbar.css'
 import CartWidget from '../cartwidget/Cart.jsx'
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return(
@@ -11,18 +12,18 @@ const Navbar = () => {
                 
                 <img src="https://www.ventanasur.com.ar/wp-content/uploads/2021/04/cine-argentino-2.jpg" alt="logo" className="box-content h-19 w-20 p-5 absolute inset-y-0 left-0"></img>
                 <nav className="">
-                    <a className="hover:text-white" href="#">
+                    <NavLink className="hover:text-white" to='/'>
                         Inicio
-                    </a>
-                    <a className="hover:text-white" href="#">
+                    </NavLink>
+                    <NavLink className="hover:text-white" to='/ categoria/peliculas'>
                         Peliculas
-                    </a> 
-                    <a className="hover:text-white" href="#">
+                    </NavLink> 
+                    <NavLink className="hover:text-white" to='/ categoria/series'>
                         Series
-                    </a> 
-                    <a className="hover:text-white" href="#">
+                    </NavLink> 
+                    <NavLink className="hover:text-white" href="#">
                         Categorías
-                    </a>
+                    </NavLink>
                     <CartWidget />    
                 </nav>
             </div>

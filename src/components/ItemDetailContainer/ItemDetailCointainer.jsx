@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
+import ItemDetail from '../ItemDetail';
 
-
-export const MOCK_DATA = [
+const MOCK_DATA = [
 
     {
       id: 1,
@@ -54,3 +55,21 @@ export const MOCK_DATA = [
     
   ];
   
+
+export const ItemListContainer = () =>{
+const [data,setData] = useState({});
+
+  useEffect(() =>{
+  const getData = new Promise(resolve =>{
+    setTimeout(() =>{
+        resolve(MOCK_DATA);
+    },3000);
+  });
+getData.then(res =>setData(res));
+ }, [])
+ return (
+    <ItemDetail data={data} />
+ );
+}
+
+export default ItemListContainer;
