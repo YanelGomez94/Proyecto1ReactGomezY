@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding-block: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -29,7 +29,12 @@
     font-weight: 700;
     font-size: 30px;
 }
+
 nav a {
     margin-right: 10px; 
+}
+
+.flex {
+    justify-content: center !important;
 }
 
