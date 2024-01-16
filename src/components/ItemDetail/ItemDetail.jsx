@@ -4,7 +4,6 @@ import QuantitySelector from "./QuantitySelector";
 import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
-
 const ItemDetail = ({ item }) => {
   const navigate = useNavigate()
   const [cantidad, setCantidad] = useState(1)
