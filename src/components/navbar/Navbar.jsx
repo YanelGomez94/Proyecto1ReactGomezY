@@ -1,8 +1,7 @@
 import './Navbar.css';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import CartWidget from './cartWidget';
-import DropDown from '../DropDown/DropDown';
+import CartWidget from './CartWidget';
 
 
 
@@ -44,7 +43,6 @@ const Navbar = () => {
           ))}
 
           <CartWidget />
-          <DropDown />
         </nav>
 
       </div>
