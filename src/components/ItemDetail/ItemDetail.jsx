@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import Boton from "../boton/boton";
-import QuantitySelector from "./QuantitySelector";
+import QuantitySelector from "./quantitySelector";
 import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
